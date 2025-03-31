@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="autoplay-policy" content="no-user-gesture-required">
+    <title>Interactive Light Switch</title>
+    <link rel="stylesheet" href="src/styles/style.css">
+    <link rel="icon" href="public/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Orbitron:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <!-- Preloaded audio elements with controls for debugging -->
+    <audio id="switchClickSound" src="./public/lightswitch.mp3" preload="auto" controls style="display: none;"></audio>
+    
+    <div class="container" style="opacity: 0; transform: translateY(20px);">
+        <div class="icon-container">
+            <i class="fas fa-lightbulb bulb-icon"></i>
+        </div>
+        <h1 class="title">Toggle the Light</h1>
+        
+        <div class="switch-container">
+            <div class="switch" id="lightSwitch">
+                <div class="switch-handle"></div>
+            </div>
+        </div>
+        
+        <p class="status">Lights are ON</p>
+        
+        <div class="info-text">
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>&copy; 2024 Interactive Light Switch | <a href="https://github.com/chaitanya-218" target="_blank">GitHub</a></p>
+    </footer>
+    
+    <script src="src/main.js"></script>
+</body>
+</html> 
